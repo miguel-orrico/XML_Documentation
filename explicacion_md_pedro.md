@@ -1,5 +1,4 @@
 # XML
-***
 
 ## What is it?
 -It's a language used to store and transport data between applications.
