@@ -2,11 +2,12 @@
 
 # XML Introduction
 Diferences between XML and HTML
-XML | HTML
-Designed to carry data | Designed to display data
-Simplifies things | More complex
-Does NOT do anything | Essential to show information
-Tags not predifined | Tags predifined
+| XML | HTML |
+| :--- | :--- |
+| Designed to carry data | Designed to display data |
+| Simplifies things | More complex |
+| Does NOT do anything | Essential to show information |
+| Tags not predefined | Tags predefined |
 
 # XML Tree
 * XML Tree starts at a root element
