@@ -12,7 +12,7 @@ Diferences between XML and HTML
 ## XML Tree
 * XML Tree starts at a root element
 * All elements can have sub elements
-* XML Documents are formed as element trees
+* XML Documents are formed as element trees 
 * The terms used are parent, child and siblings
 * Siblings are children on the same level, branch from the parent
 
