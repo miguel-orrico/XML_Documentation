@@ -6,7 +6,7 @@
 
 
 
-#### **XML (eXtensible Markup Language)**: 
+#### **XML (eXtensible Markup Language)**:
 
 ##### Fue diseñado para almacenar y transportar datos.
 
@@ -34,21 +34,25 @@ Todo documento XML empieza **SIEMPRE** con al menos un **elemento raíz (root)**
 
 
 
+```
+
 <root>
 
-&nbsp; <hijo\_1>
-
-&nbsp;   <subhijo>...</subhijo>
-
-&nbsp; </hijo\_1>
-
-&nbsp; <hijo\_2>
+  <hijo\\\_1>
 
     <subhijo>...</subhijo>
 
-  </hijo\_2>
+  </hijo\\\_1>
+
+  <hijo\\\_2>
+
+    <subhijo>...</subhijo>
+
+  </hijo\\\_2>
 
 </root>
+
+```
 
 
 
@@ -60,25 +64,27 @@ XML es **descriptivo por naturaleza**. Por ejemplo, en el caso de una librería:
 
 
 
-<?xml version="1.0" encoding="UTF-8"?> **-> Prolog: Se encarga de definir la versión y codificación de 							  caracteres (Opcional, pero preferiblemente se tiene que usar)**
+`<?xml version="1.0" encoding="UTF-8"?>` \*\*-> Prolog: Se encarga de definir la versión y codificación de 						      caracteres (Opcional, pero preferiblemente se tiene que usar)\*\*
 
-
+```
 
 <bookstore>
 
-&nbsp;  <book category="cooking">
+   <book category="cooking">
 
-&nbsp;     <title>Everyday Italian</title>
+      <title>Everyday Italian</title>
 
       <author>Giada De Laurentiis</author>
 
-&nbsp;     <year>2005</year>
+      <year>2005</year>
 
       <price>30.00</price>
 
-&nbsp;  </book>
+   </book>
 
 </bookstore>
+
+```
 
 
 
@@ -94,26 +100,26 @@ Aunque es cierto que se inventan las etiquetas existen **entidades predefinidas 
 
 
 
-|**\&lt;**|**<**|**menos que**|
+|**`\\\&lt;`**|**<**|**menos que**|
 |-|-|-|
-|**\&gt;**|**>**|**mayor que**|
-|**\&amp;**|**\&**|**ampersand** |
-|**\&apos;**|**'**|**apostrofe**|
-|**\&quot;**|**<br />"**|**comillas**|
+|**`\\\&gt;`**|**>**|**mayor que**|
+|**`\\\&amp;`**|**\&**|**ampersand**|
+|**`\\\&apos;`**|**'**|**apostrofe**|
+|**`\\\&quot;`**|**<br />"**|**comillas**|
 
 
 
-**Ej:** 
+**Ej:**
 
-<message>salary < 1000</message>
+`<message>salary < 1000</message>`
 
-<message>salary \&lt; 1000</message>
-
-
+`<message>salary \\\&lt; 1000</message>`
 
 
 
-Además, para **comentar es similar a HTML:** <!-- This is a comment -->
+
+
+Además, para **comentar es similar a HTML:** `<!-- This is a comment -->`
 
 
 
@@ -150,7 +156,7 @@ No es obligatorio como las reglas, pero se deberían usar:
 
 
 
-* Usar **nombres descriptivos y claros**: <firstname>, <lastname>.
+* Usar **nombres descriptivos y claros**: `<firstname>`, `<lastname>`.
 
 
 
@@ -162,50 +168,71 @@ No es obligatorio como las reglas, pero se deberían usar:
 
 
 
-&nbsp;	**-** (puede interpretarse como resta en algunos contextos).
+ 	**-** (puede interpretarse como resta en algunos contextos).
 
-&nbsp;	**.** (puede interpretarse como propiedad de objeto).
+ 	**.** (puede interpretarse como propiedad de objeto).
 
-&nbsp;	**:** (reservado para namespaces).
+ 	**:** (reservado para namespaces).
 
 
 
 Es **recomendable** elegir una convención y mantener consistencia:
 
-* lower case → <firstname>
-* UPPER CASE → <FIRSTNAME>
-* snake\_case → <first\_name>
-* PascalCase → <FirstName>
-* camelCase → <firstName>
+* lower case → `<firstname>``
+* UPPER CASE → `<FIRSTNAME>`
+* snake\_case → `<first\\\_name>`
+* PascalCase → `<FirstName>`
+* camelCase → `<firstName>`
 
 
 
+###### **Atributos en XML:**
+
+Al igual que en HTML, XML pueden tener atributos que **proporcionan información adicional sobre un elemento.**
+
+**PERO, no existen reglas de usar un atributo o elemento,** por lo tanto se pueden usar dependiendo del diseño del documento. Por ejemplo:
 
 
-# COSAS IMPORTANTES SOBRE XML
 
-## XML Introduction
-Diferences between XML and HTML
-| XML | HTML |
-| :--- | :--- |
-| Designed to carry data | Designed to display data |
-| Simplifies things | More complex |
-| Does NOT do anything | Essential to show information |
-| Tags not predefined | Tags predefined |
+**ATRIBUTO**:
 
-## XML Tree
-* XML Tree starts at a root element
-* All elements can have sub elements
-* XML Documents are formed as element trees
-* The terms used are parent, child and siblings
-* Siblings are children on the same level, branch from the parent
 
-## XML Syntax
-* XML documents must have **one** *root* element (parent)
-* The *XML prolog* is optional. If it exists, it must come first in the document.
-* All elements *must* have closing tag.
-* Tags ***are case*** *sensitive*.
-* All elements *must* be properly nested.
-* In XML, an error in the document typically causes the parser to *STOP* processing.
 
-## XML Elements
+```
+
+<person gender="female">
+
+\&nbsp; <firstname>Anna</firstname>
+
+\&nbsp; <lastname>Smith</lastname>
+
+</person>
+
+```
+
+
+
+**ELEMENTO**:
+
+
+
+```
+
+<person>
+
+\&nbsp; <gender>female</gender>
+
+\&nbsp; <firstname>Anna</firstname>
+
+\&nbsp; <lastname>Smith</lastname>
+
+</person>
+
+```
+
+Aunque hay que tener en cuenta que los atributos **tienen limitaciones**:
+
+* Los atributos **no pueden contener múltiples valores estructurados**.
+* **No pueden contener subelementos** (estructura en árbol).
+* Son **menos flexibles** ante cambios futuros.
+* Un **uso excesivo** puede volver el documento **difícil de mantener**.
