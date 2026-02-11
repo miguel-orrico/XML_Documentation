@@ -1,14 +1,27 @@
-# ¿Qué es XML?
+# ¿What is XML?
 ***
-## XML es un tipo de archivo que sirve principalmente para almacenar y transferir datos, de una forma **legible**.
+## XML is a type of file that is used for *data storage and transfer*, making it **readable** for the people.
+***
+## It ***must*** have: 
+- A "root element".
+- Closed tags.
 
-## Tiene que tener un "root element", etiquetas bien cerradas, y pueden tener o no atributos. Y los elementos pueden tener atributos.
+## It may have:
+- Another elements (childs or siblings).
+- Attributes to add more information.
 
-### Por ejemplo, una empresa que tiene unos recursos y quiere una estructura de datos ordenada y bien organizada:
+## The *main differences* we can observe are:
+### For example, a comparison with HTML.
+|| XML | HTML |
+|----------|----------|----------|
+| Row 1    | Cell 2   |----------|
+***
+## USAGE EXAMPLE. 
+- A company that has resources and wants the data structured and organized.
 
-- La empresa primero pensaría la estructura del XML.
+- The company could use XML for storing and sending data.
 
-- Luego, pondrían las etiquetas principales (como centro, recursos...).
+- The company would add the main tags, such as the root element, and then add the correct tags to structure the data.
 
-- Por último, empiezan a "adentrarse" cada vez más en cada elemento, por ejemplo tipos de recurso.
+- The company could add attributes to add extra information and/or sibling or child elements to make data more clear.
 
