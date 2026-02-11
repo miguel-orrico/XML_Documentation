@@ -52,6 +52,14 @@ Los elementos en XML son las 'etiquetas' de HTML. No existen predefinidas, si no
 | -- | -- |
 | `<x><i><\i><\x>` | `<x><i><\x><\i>` |
 
+Las normas para declarar los nombres de los elementos:
+* Tienen que empezar por letra o `_`.
+* El único patron de caracteres es xml, tanto en minúsculas como en mayúsculas.
+* Pueden contener letras, números, `-`, `_` y `.` ➡️ Estos tres últimos no son recomendables usarlos, al igual que las letras fuera del alfabeto ingles.
+* No pueden contener espacios.
+
+No existe ninguna convención para nombrar los elementos, pero se suele utilizar la misma que en la base de datos relacionad, si tiene.
+
 ### Caracteres problemáticos
 Dentro de los elementos podemos guardar datos, estos datos pueden contener caracteres problemáticos. Estos caracteres son `<` y `&`, pero también pueden causar problemas `>`, `'` o `"`. Es por eso que se sustituyen con los siguiente códigos.
 
