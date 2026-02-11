@@ -36,10 +36,15 @@ Diferences between XML and HTML
     <author>John Doe</author>
 </book>
 ```
-
-# XML Advantages
-
-- Platform-independent and language-independent.
-- Easy to share and transport data across systems.
-- Human-readable and machine-readable.
-- Supports hierarchical data structures.
+## XML Attributes
+* Attributes provide additional information about elements.
+* They appear inside the start tag in name="value" form.
+* An element can have multiple attributes, separated by spaces.
+* Attribute values must always be quoted (single or double quotes).
+* Example:
+```xml
+<book genre="Programming" language="English">
+    <title>XML Fundamentals</title>
+    <author>John Doe</author>
+</book>
+```
