@@ -25,3 +25,14 @@ Diferences between XML and HTML
 * In XML, an error in the document typically causes the parser to *STOP* processing.
 
 ## XML Elements
+* Elements are the building blocks of XML.
+* They can contain text, other elements (child elements), or both.
+* Elements are defined by a start tag `<tag>` and an end tag `</tag>`.
+* Empty elements can use the self-closing form: `<tag/>`.
+* Example:
+```xml
+<book>
+    <title>XML Fundamentals</title>
+    <author>John Doe</author>
+</book>
+## XML Atributes
