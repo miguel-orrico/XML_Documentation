@@ -1,2 +1,0 @@
-## COSAS IMPORTANTES SOBRE XML
-XML es prueba
