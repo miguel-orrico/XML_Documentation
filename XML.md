@@ -35,4 +35,11 @@ Diferences between XML and HTML
     <title>XML Fundamentals</title>
     <author>John Doe</author>
 </book>
-## XML Atributes
+```
+
+# XML Advantages
+
+- Platform-independent and language-independent.
+- Easy to share and transport data across systems.
+- Human-readable and machine-readable.
+- Supports hierarchical data structures.
