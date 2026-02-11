@@ -14,7 +14,10 @@
 ### For example, a comparison with HTML.
 || XML | HTML |
 |----------|----------|----------|
-| Row 1    | Cell 2   |----------|
+|Introduction| Easy to understand, only for data storage and transfer | Has a lot of tags, attributes and is the most common thing in all pages |
+|Syntax| You can put whatever name tag you want, but it must have a root element and closing tags | Has to be structured, with semantic meaning, opening and closing tags and you can include classes and ids |
+|Elements| An element is a "tag" inside another | The elements are structured, but could have for example an element surrounded by a div (another element)|
+|Attribute| XML uses this to provide "extra information" | HTML tags can have a lot of attributes, and each one can have more than one, for example one section could have a class and an id at the same time |
 ***
 ## USAGE EXAMPLE. 
 - A company that has resources and wants the data structured and organized.
