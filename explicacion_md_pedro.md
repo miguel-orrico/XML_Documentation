@@ -1,4 +1,5 @@
 # XML
+***
 
 ## What is it?
 -It's a language used to store and transport data between applications.
@@ -7,4 +8,5 @@
 
 | XML | HTML |
 |-----------|--------|
-|  ">"  | Texto 2|
+|  Pedido  | section class="pedido"  |
+|  Pan x2 |  article class="pan" |
