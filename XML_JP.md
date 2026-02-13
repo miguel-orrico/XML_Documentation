@@ -74,4 +74,4 @@ Diferences between XML and HTML
 * Attribute values must be quoted.
 * XML is case sensitive.
 
-METO CAMBIO AL FINAL DEL TOOD
+ME CAGO EN TODO
