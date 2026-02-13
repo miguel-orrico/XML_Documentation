@@ -73,3 +73,5 @@ Diferences between XML and HTML
 * Elements must be properly nested.
 * Attribute values must be quoted.
 * XML is case sensitive.
+
+ME CAGO EN TODO
