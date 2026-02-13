@@ -15,7 +15,6 @@ Diferences between XML and HTML
 * XML Documents are formed as element trees
 * The terms used are parent, child and siblings
 * Siblings are children on the same level, branch from the parent
-agjappkgjadfg
 
 ## XML Syntax
 * XML documents must have one *root* element (parent)
@@ -74,3 +73,5 @@ agjappkgjadfg
 * Elements must be properly nested.
 * Attribute values must be quoted.
 * XML is case sensitive.
+
+METO CAMBIO AL FINAL DEL TOOD
