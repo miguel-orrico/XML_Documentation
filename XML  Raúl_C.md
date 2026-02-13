@@ -102,10 +102,10 @@ Aunque es cierto que se inventan las etiquetas existen **entidades predefinidas 
 
 |**`\\\&lt;`**|**<**|**menos que**|
 |-|-|-|
-|**`\\\&gt;`**|**>**|**mayor que**|
-|**`\\\&amp;`**|**\&**|**ampersand**|
-|**`\\\&apos;`**|**'**|**apostrofe**|
-|**`\\\&quot;`**|**<br />"**|**comillas**|
+|**`\&gt;`**|**>**|**mayor que**|
+|**`\&amp;`**|**\&**|**ampersand**|
+|**`\&apos;`**|**'**|**apostrofe**|
+|**`\&quot;`**|**<br />"**|**comillas**|
 
 
 
@@ -236,3 +236,4 @@ Aunque hay que tener en cuenta que los atributos **tienen limitaciones**:
 * **No pueden contener subelementos** (estructura en árbol).
 * Son **menos flexibles** ante cambios futuros.
 * Un **uso excesivo** puede volver el documento **difícil de mantener**.
+
