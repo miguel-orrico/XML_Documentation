@@ -1,27 +1,33 @@
-# COSAS IMPORTANTES SOBRE XML
+# What is XML?
+XML (eXtensible Markup Language) is a markup language designed to store and transport data.
 
-## XML Introduction
-Diferences between XML and HTML
-| XML | HTML |
-| :--- | :--- |
-| Designed to carry data | Designed to display data |
-| Simplifies things | More complex |
-| Does NOT do anything | Essential to show information |
-| Tags not predefined | Tags predefined |
 
-## XML Tree
-* XML Tree starts at a root element
-* All elements can have sub elements
-* XML Documents are formed as element trees 
-* The terms used are parent, child and siblings
-* Siblings are children on the same level, branch from the parent
+## XML Does NOTHING
+It's just information wrapped in tags, focused on organizing and describing data
 
-## XML Syntax
-* XML documents must have **one** *root* element (parent)
-* The *XML prolog* is optional. If it exists, it must come first in the document.
-* All elements *must* have closing tag.
-* Tags ***are case*** *sensitive*.
-* All elements *must* be properly nested.
-* In XML, an error in the document typically causes the parser to *STOP* processing.
+# What is XML Used For?
+- Exchange data between systems
+- Store structured information
+- Configure applications
+- Define web services
+- reate other markup languages
 
-## XML Elements
+## Difference Between XML and HTML
+|XML|HTML
+|--------------|--------------
+Describes data | Displays data
+|Custom tags | Predefined tags
+|Strict syntax | More flexible syntax
+|Focused structure | Focused on presentation
+
+## Advantages and disadvantages of XML
+
+|Advantages | Disadvantages
+|-----------|---------------
+Clear and structures data organization | More verbose than formats like JSON
+Clear and structured data organization | Larger file size due to many tags
+Widely supported standard | Strict syntax can make it less forgiving
+Good for complex data exchange |
+
+
+
