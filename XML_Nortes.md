@@ -24,4 +24,59 @@ Diferences between XML and HTML
 * All elements *must* be properly nested.
 * In XML, an error in the document typically causes the parser to *STOP* processing.
 
-## XML Elements
+## XML VS JSON
+
+### 1. Basic Philosophy
+
+#### XML
+
+* Markup-based.
+* Tag-driven.
+* Hierarchical tree structure.
+
+#### JSON
+
+* Data-object based.
+* Key–value structure.
+* Maps directly to programming objects.
+
+### 2. Readability
+
+* JSON → shorter, cleaner, easier for humans.
+* XML → more verbose, more structured, more formal.
+* XML repeats tag names.
+* JSON avoids duplication.
+* Your eyes will thank JSON.
+
+### 3. Strictness
+
+* Both are strict formats.
+* But XML is strict in a more ceremonial way:
+
+#### XML
+* Closing tags required
+* Case sensitive
+* Proper nesting required
+* Attribute quoting mandatory
+
+#### JSON:
+
+* Uses braces {} and brackets []
+* Strict commas
+* Double quotes required for keys
+* Both will break if malformed.
+
+### 4. Structure Model
+
+#### XML:
+
+* Pure tree structure
+* Uses elements and attributes
+* Mixed content possible (text + elements)
+
+#### JSON:
+
+* Objects and arrays
+* Naturally maps to dictionaries and lists
+* no attributes concept
+* JSON maps better to programming languages.
