@@ -75,3 +75,13 @@ Aparte para evitar errores con los caracteres que utilices puedes añadir al pri
 
 > `<?xml version="1.0" encoding="UTF-8"?>`
 
+### Atributos
+Contienen información de un elemento en concreto. 
+
+Se caracterizan por:
+* No pueden contener multiples valores.
+* Se pierda la estructura en árbol.
+* No son fácilmente extensibles.
+* Se pueden utilizar para identificar a un elemento en concreto por un ID.
+
+## 
