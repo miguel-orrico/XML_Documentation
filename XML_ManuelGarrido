@@ -1,0 +1,21 @@
+# XML Introduction
+
+## Introduction: What is XML?
+
+XML focuses on **carrying data**, concentrating on what the data is, sharing it efficiently, and in a way that is easy for people and machines to understand.
+
+## Difference with HTML
+
+It differs from HTML, which focuses on **displaying data** and is more concerned with appearance.  
+- **XML** is a markup language used to **store and transport data**.  
+- **HTML** is more concerned with **displaying data**.
+
+## Uses of XML
+
+On its own, XML does **nothing**. But not entirely…  
+
+- **Data storage**: XML is used to store data in a structured and organized way.  
+
+Someone has to write software to do something with it; on its own, it does nothing.  
+XML is similar to JSON: you have data, and each app can do whatever it wants with it.  
+In the past, each app used to store data however it wanted.
