@@ -1,211 +1,90 @@
-# **XML Documentation**
+# Introducción a XML
 
-## Collaborative Document about What's important in XML
+XML (eXtensible Markup Language) es un lenguaje de marcado diseñado principalmente para **almacenar y transportar datos**. A diferencia de HTML, que se centra en mostrar información en una página web, XML se enfoca en describir datos de forma estructurada para que puedan ser entendidos tanto por personas como por máquinas.
 
+XML no fue creado para reemplazar otros lenguajes como JavaScript ni para diseñar interfaces visuales. Su propósito es servir como un formato estándar para el intercambio de información entre diferentes sistemas.
 
 
 
+## ¿Cómo almacena los datos XML?
 
-#### **XML (eXtensible Markup Language)**: 
+Una de las características más importantes de XML es que almacena la información en **texto plano**. Esto significa que:
 
-##### Fue diseñado para almacenar y transportar datos.
+- Puede abrirse con cualquier editor de texto.
+- Es legible por humanos.
+- Puede procesarse fácilmente por programas y aplicaciones.
+- No depende de formatos binarios ni propietarios.
 
+Gracias a esto, XML es muy flexible y ampliamente compatible.
 
 
-* ###### **General**
 
-**XML** surgió de la **necesidad de intercambiar datos y que fuese intelligible**. Por ello este **lenguaje** se encarga de **contener información** envuelto en etiquetas, las cuales no están predefinidas como HTML, sino que son inventadas por el autor del documento.
+## Independencia de plataforma
 
+XML es **independiente del software y del hardware**. Esto quiere decir que:
 
+- No está ligado a un sistema operativo específico.
+- Puede utilizarse en distintas plataformas (Windows, Linux, macOS).
+- Permite intercambiar datos entre aplicaciones desarrolladas en distintos lenguajes de programación.
 
-XML **simplifica** las cosas, haciendo que las **incompatibilidades** con el **transporte, compartir o incluso almacenaje de los datos se minimicen**. Lo que hace que sea más fácil el expandir o mejorar nuestras aplicaciones, páginas, etc. **sin perder esos datos**.
+Esta independencia es una de las razones por las que XML se convirtió en un estándar para el intercambio de datos en internet y en sistemas empresariales.
 
 
 
-* ###### **Usos**
+## Legibilidad: humanos y máquinas
 
-XML **NO** define el cómo se muestran los datos. Lo que le permite que la misma información, como en el caso del tiempo que hace en Elche, se pueda mostrar de diversas maneras. Por ejemplo, una página web o aplicación móvil.
+Los documentos XML están diseñados para ser:
 
+- **Comprensibles para las personas**, gracias a su estructura clara y etiquetas descriptivas.
+- **Procesables por máquinas**, ya que siguen reglas sintácticas estrictas que permiten a los programas interpretarlos correctamente.
 
+Esto facilita la comunicación entre diferentes sistemas informáticos y también permite que los desarrolladores puedan revisar los datos fácilmente.
 
-* ###### **Estructura de árbol (Tree)**
 
-Todo documento XML empieza **SIEMPRE** con al menos un **elemento raíz (root)**, del cual se despenden **elementos hijos** y de los cuales pueden contener aún más elementos, formando así unos **niveles jerárquicos**. Por ejemplo:
 
+## Idea principal de XML
 
+La idea central detrás de XML es proporcionar una forma estructurada, clara y estandarizada de representar información. Su objetivo fundamental es permitir que los datos puedan almacenarse y transportarse de manera segura y comprensible entre distintos entornos tecnológicos.
 
-<root>
+---
 
-&nbsp; <hijo\_1>
+# Sintaxis de XML 
+Todos los documentos de XML deben de tener si o si exactamente un elemento root el cual debe de contener todos los demas elementos del documento.
 
-&nbsp;   <subhijo>...</subhijo>
 
-&nbsp; </hijo\_1>
 
-&nbsp; <hijo\_2>
+## Prologo
+No es obligatorio en un documento XML pero si existe debe de ser lo primero que hay en eel documento.
 
-    <subhijo>...</subhijo>
+Los documentos XML pueden contener caracteres en Noruego o Frances que no se encuentran en otras lenguas por lo que se recomienda especificar el 'encoding'.
 
-  </hijo\_2>
+El 'encoding' por defecto es el internacional, expresado como 'UTF-8' que contiene los caracteres comentados con anterioridad.
 
-</root>
 
 
+## Especificaciones sobre la sintaxis de XML
 
-* ###### **Sintaxis autodocumentada (Self-Describing Syntax)**
+- Todos los elementos deben de tener una etiqueta de cierre (o deben de ser auto concliusivas).
+- Las etiquetas de XML son sensibles a las mayusculas y minusculas
+- Las etiquetas deben de estar correctamente anidadas es decir `<b><i> texto </i></b>`
+-En XML los atributos deben de estar siempre entre comillas por ejemplo:
+```
+<note date="12/11/2007">
+  <to>Tove</to>
+  <from>Jani</from>
+</note>
+```
 
+---
 
+# XML Structure
+- Todos los documentos XML estan estructurados en forma de arbol (como uno genealogico).
 
-XML es **descriptivo por naturaleza**. Por ejemplo, en el caso de una librería:
+- Todos tienen un elemento root del cual salen los hijos y sub hijos, todos los elementos pueden tener sub elementos(child elements).
 
+- Los terminos Parent, child y sibling son utilizados para hacer referencia a las relaciones entre elementos .
 
+---
 
-<?xml version="1.0" encoding="UTF-8"?> **-> Prolog: Se encarga de definir la versión y codificación de 							  caracteres (Opcional, pero preferiblemente se tiene que usar)**
+# Elementos de XML
 
-
-
-<bookstore>
-
-&nbsp;  <book category="cooking">
-
-&nbsp;     <title>Everyday Italian</title>
-
-      <author>Giada De Laurentiis</author>
-
-&nbsp;     <year>2005</year>
-
-      <price>30.00</price>
-
-&nbsp;  </book>
-
-</bookstore>
-
-
-
-A partir de esta estructura se puede entender fácilmente que el documento contiene información sobre libros de una librería.
-
-
-
-* ###### **Otras características**
-
-
-
-Aunque es cierto que se inventan las etiquetas existen **entidades predefinidas principalmente para caracteres especiales.** Por ejemplo:
-
-
-
-|**\&lt;**|**<**|**menos que**|
-|-|-|-|
-|**\&gt;**|**>**|**mayor que**|
-|**\&amp;**|**\&**|**ampersand** |
-|**\&apos;**|**'**|**apostrofe**|
-|**\&quot;**|**<br />"**|**comillas**|
-
-
-
-**Ej:** 
-
-<message>salary < 1000</message>
-
-<message>salary \&lt; 1000</message>
-
-
-
-
-
-Además, para **comentar es similar a HTML:** <!-- This is a comment -->
-
-
-
-
-
-* ###### **Elementos y reglas del XML**
-
-
-
-**Un elemento XML** comprende todo lo que va desde la etiqueta de apertura hasta la etiqueta de cierre. Destacando también los **elementos vacíos**, los cuales pueden tener atributos: <element></element>
-
-
-
-###### **Reglas de nombrado en XML:**
-
-Los nombres de los elementos deben cumplir estas reglas:
-
-
-
-* Son **sensibles** a **mayúsculas/minúsculas**.
-* **Deben** comenzar con letra o guion bajo (\_).
-* **No** **pueden** comenzar con **"xml"** (en ninguna combinación de mayúsculas).
-* **Pueden** contener **letras, números, guiones (-), guiones bajos (\_), y puntos (.)**.
-* **No pueden** contener **espacios**.
-* **No** hay **palabras reservadas** (excepto "xml").
-
-
-
-
-
-###### **Cosas a tener en cuenta:**
-
-No es obligatorio como las reglas, pero se deberían usar:
-
-
-
-* Usar **nombres descriptivos y claros**: <firstname>, <lastname>.
-
-
-
-* Mantenerlos **simples y concisos**.
-
-
-
-* **Evitar**:
-
-
-
-&nbsp;	**-** (puede interpretarse como resta en algunos contextos).
-
-&nbsp;	**.** (puede interpretarse como propiedad de objeto).
-
-&nbsp;	**:** (reservado para namespaces).
-
-
-
-Es **recomendable** elegir una convención y mantener consistencia:
-
-* lower case → <firstname>
-* UPPER CASE → <FIRSTNAME>
-* snake\_case → <first\_name>
-* PascalCase → <FirstName>
-* camelCase → <firstName>
-
-
-
-
-
-# COSAS IMPORTANTES SOBRE XML
-
-## XML Introduction
-Diferences between XML and HTML
-| XML | HTML |
-| :--- | :--- |
-| Designed to carry data | Designed to display data |
-| Simplifies things | More complex |
-| Does NOT do anything | Essential to show information |
-| Tags not predefined | Tags predefined |
-
-## XML Tree
-* XML Tree starts at a root element
-* All elements can have sub elements
-* XML Documents are formed as element trees
-* The terms used are parent, child and siblings
-* Siblings are children on the same level, branch from the parent
-
-## XML Syntax
-* XML documents must have **one** *root* element (parent)
-* The *XML prolog* is optional. If it exists, it must come first in the document.
-* All elements *must* have closing tag.
-* Tags ***are case*** *sensitive*.
-* All elements *must* be properly nested.
-* In XML, an error in the document typically causes the parser to *STOP* processing.
-
-## XML Elements
