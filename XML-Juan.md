@@ -4,26 +4,24 @@ XML o eXtensible Markup Language es un lenguaje de marcado estructurado, pensado
 ## Características de XML
 Algunas de las características principales de XML son:
 * Es un lenguaje de marcas.
+* Esta pensado para ser auto-descriptivo.
 * Independencia del software y hardware ➡️ Al ser íntegramente texto plano.
 * No tiene etiquetas pre-definidas ➡️ Tu creas las etiquetas.
-* Esta pensado para ser auto-descriptivo.
 * Es extensible ➡️ Puedes eliminar o añadir información sin romper el programa
 * Es un estándar recomendado por w3c $*^1$.
 * Separa la información de la presentación ➡️ XML no da datos sobre la presentación. Junto a JS puedes crear contenido que cambie con la información de un XML. Ejem.: Actividad de los Simpsons
-* Estructura de Árbol.
-* Todas las etiquetas deben tener una de abertura y una de cierre. Las auto-cerradas también deben cerrarse. Ejem.: <img />
+* Utiliza una estructura de Árbol.
+* Todas las etiquetas deben tener una de abertura y una de cierre. Las auto-cerradas también deben cerrarse. Ejem.: `<img />`.
 * Los espacios de los valores no se colapsan como en HTML.
 
-
 > $*^1$ [Documentación w3c]("https://www.w3.org/TR/xml/"), [Recurso w3c]("https://www.w3.org/XML/") y [XML en 10 puntos]("https://www.w3.org/XML/1999/XML-in-10-points.es.html")
-
 
 ## Estructura de Árbol
 Todo documento XML tiene un elemento raíz o root. Dentro se almacenarán los demás elementos que contenga el archivo XML.
 
-Puedes anidar tantos elementos como veas necesario, y es hay donde entra la estructura de árbol, donde un elemento padre es quien agrupa un elemento, siendo este último llamado hijo. Los elementos que se mantienen en el mismo nivel se denominan elementos hermanos.
+Puedes anidar tantos elementos como veas necesario. Y es hay donde entra la estructura de árbol, donde un elemento padre es quien agrupa un elemento, siendo este último llamado hijo. Los elementos que se mantienen en el mismo nivel se denominan elementos hermanos.
 
-![x]("x")
+![tree.png](tree.png)
 
 Por lo que, en todos los archivos XML existirá un elemento raíz, el cual, será el padre de resto de elementos, y a partir de esos hijos se crearan otros hijos, en caso de ser necesario, que almacenarán los datos.
 
@@ -54,11 +52,11 @@ Los elementos en XML son las 'etiquetas' de HTML. No existen predefinidas, si no
 
 Las normas para declarar los nombres de los elementos:
 * Tienen que empezar por letra o `_`.
-* El único patron de caracteres es xml, tanto en minúsculas como en mayúsculas.
+* El único patron de caracteres reservado es xml, tanto en minúsculas como en mayúsculas.
 * Pueden contener letras, números, `-`, `_` y `.` ➡️ Estos tres últimos no son recomendables usarlos, al igual que las letras fuera del alfabeto ingles.
 * No pueden contener espacios.
 
-No existe ninguna convención para nombrar los elementos, pero se suele utilizar la misma que en la base de datos relacionad, si tiene.
+No existe ninguna convención para nombrar los elementos, pero se suele utilizar la misma que en la base de datos relacionada al documento, si tiene.
 
 ### Caracteres problemáticos
 Dentro de los elementos podemos guardar datos, estos datos pueden contener caracteres problemáticos. Estos caracteres son `<` y `&`, pero también pueden causar problemas `>`, `'` o `"`. Es por eso que se sustituyen con los siguiente códigos.
@@ -71,7 +69,7 @@ Dentro de los elementos podemos guardar datos, estos datos pueden contener carac
 | `'` | `&apos;` |
 | `"` | `&quot;` |
 
-Aparte para evitar errores con los caracteres que utilices puedes añadir al principio del documento un prologo, el cual, es opcional, de existir tienen que ir al principio del documento, y solo indica la versión de XML y el juego de caracteres utilizado, que por defecto es UTF-8.
+Aparte para evitar errores con los caracteres que utilices puedes añadir al principio del documento un prologo, el cual, es opcional, pero de existir tienen que ir al principio del documento, y solo indica la versión de XML y el juego de caracteres utilizado, por defecto es UTF-8.
 
 > `<?xml version="1.0" encoding="UTF-8"?>`
 
@@ -83,5 +81,3 @@ Se caracterizan por:
 * Se pierda la estructura en árbol.
 * No son fácilmente extensibles.
 * Se pueden utilizar para identificar a un elemento en concreto por un ID.
-
-## 
