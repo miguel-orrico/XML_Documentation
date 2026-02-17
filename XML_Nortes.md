@@ -4,10 +4,10 @@
 
 XML, which stands for eXtensible Markup Language, is a markup language designed to store and transport data in a structured and platform-independent way. One of its most important characteristics is that it is extensible. Unlike HTML, which has predefined tags such as &lt;p&gt; or &lt;div&gt;, XML allows you to create your own tags. This means you can design a structure that fits exactly the type of data you are working with, whether it is information about books, students, transactions, or configuration settings. That flexibility is one of its core strengths.
 
-&lt;person&gt;
-  &lt;name&gt;Mike&lt;/name&gt;
-  &lt;age&gt;29&lt;/age&gt;
-&lt;/person&gt;
+&lt;person&gt;<br>
+  &lt;name&gt;Mike&lt;/name&gt; <br>
+  &lt;age&gt;29&lt;/age&gt;<br>
+&lt;/person&gt;<br>
 
 ## Plain text format
 Another key characteristic of XML is that it is text-based. XML documents are plain text files, which makes them human-readable and easy to edit with any text editor. Because they are just text, they are independent of operating systems, hardware, and programming languages. An XML file created on Windows can be read on Linux or macOS without modification. This portability is one of the reasons XML became widely used for data exchange between systems.
