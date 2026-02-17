@@ -10,6 +10,10 @@
 - Attributes to add more information.
 - Prolog (a line that specifies the encoding used and the XML version).
 
+# IMPORTANT
+- The Metadata information goes to attributes, not to elements.
+- Try not to use as many attributes, as they aren't as scalable as elements.
+
 ## The *main differences* we can observe are:
 ***
 ### For example, a comparison with HTML.
@@ -32,14 +36,31 @@
 ## AN USAGE EXAMPLE (FOR EXAMPLE, A HOTEL)
 `<hotel stars="5">`
 
-`   <bigrooms size="big_room">`
-`   <price extended_price="99.99">`
-`   </rooms>`
+`   <bigrooms id="1">`
+`   <price>99.99</price>`
+`   <capacity>5</capacity>`
+`   </bigrooms>`
 
-`   <mediumrooms size="medium_room">`
-`   <price standard_price="49.99">`
+`   <mediumrooms id="2">`
+`   <price>49.99</price>`
+`   <capacity>2</capacity>`
 `</mediumrooms>`
 
 `<hotel>`
 
 ### As we can see, the data is clearly readable and is well structured (it has a root element and tags properly nested).
+***
+
+# What is XHTML?
+
+## XHTML is a stricter version of HTML, designed for including XML in HTML and is supported by a big variety of browsers.
+
+### Differences between XHTML and HTML:
+
+- Must include the `xmlns` attribute on the `<html>` tag.
+- Must include the DOCTYPE tag.
+- Must have properly nested and closed tags.
+- Must have `<html>`, `<head>` , `<title>` and `<body>`.
+- Must have quoted values.
+
+### XHTML won't display the website if there is any error, unlike HTML that will display it.
