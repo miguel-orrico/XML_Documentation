@@ -23,6 +23,7 @@ Es independiente de plataformas y sistemas, y es una recomendación oficial del 
 | Etiquetas             | Definidas por el autor          | Predefinidas (`<p>`, `<h1>`, etc.) |
 | Flexibilidad          | Extensible                       | Limitada, pensada para presentación |
 
+
 ---
 
 ## Características principales
