@@ -69,6 +69,10 @@ Todos los documentos XML deben tener un elemento root
 </root>
 ```
 
+### Case sensitive
+
+Los tags en XML son case sensitive, es decir, \<tag> y \<Tag> son etiquetas distintas
+
 # XML Tree
 
 Los documentos XML estan estructurados en forma de arbol empezando por el root
