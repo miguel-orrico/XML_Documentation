@@ -14,7 +14,7 @@ Algunas de las características principales de XML son:
 * Todas las etiquetas deben tener una de abertura y una de cierre. Las auto-cerradas también deben cerrarse. Ejem.: `<img />`.
 * Los espacios de los valores no se colapsan como en HTML.
 
-> $*^1$ [Documentación w3c]("https://www.w3.org/TR/xml/"), [Recurso w3c]("https://www.w3.org/XML/") y [XML en 10 puntos]("https://www.w3.org/XML/1999/XML-in-10-points.es.html")
+> $*^1$ [Documentación w3c](https://www.w3.org/TR/xml/), [Recurso w3c](https://www.w3.org/XML/) y [XML en 10 puntos](https://www.w3.org/XML/1999/XML-in-10-points.es.html)
 
 ## Estructura de Árbol
 Todo documento XML tiene un elemento raíz o root. Dentro se almacenarán los demás elementos que contenga el archivo XML.
@@ -81,3 +81,10 @@ Se caracterizan por:
 * Se pierda la estructura en árbol.
 * No son fácilmente extensibles.
 * Se pueden utilizar para identificar a un elemento en concreto por un ID.
+
+# Diferencia entre HTML y XHTML
+HTML 5 tiene dos variantes; HTML y XHTML, las dos son formas de describir el contenido de página, pero contienen diferencias sintácticas. Mientras que HTML esta basado en la normal SGML $*^1$, XML esta basado en XML. Siendo que XHTML es más restrictivo en su sintaxis que HTML.
+
+> $*^1$ [Standard Generalized Markup Language](https://es.wikipedia.org/wiki/SGML)
+
+Por lo que, XHTML tienen que seguir las normas ya mencionadas en este documento. Un documento XHTML que no las siga será por tanto un documento invalido. Y dependiendo de como se envíen al navegador; `application/xhtml+xml` o `text/html`, el navegador rechazara o intentará interpretar las. Como te podrás imaginar, `application/xhtml+xml` se utiliza para XHTML y `text/html` para HTML. 
