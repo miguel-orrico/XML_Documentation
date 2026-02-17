@@ -46,10 +46,8 @@ XML elements must follow these naming rules:
 # XML Attributes
 Attributes are designed to contain data related to a specific element.
 - XML Attributes Must be Quoted.
-<br>
-"< person gender="female" >"
 
-<br>
+--- 
 
 ## Advantages and disadvantages of XML
 
@@ -60,7 +58,7 @@ Clear and structured data organization | Larger file size due to many tags
 Widely supported standard | Strict syntax can make it less forgiving
 Good for complex data exchange |
 
-<br>
+---
 
 ## Difference Between XML and HTML
 |XML|HTML
