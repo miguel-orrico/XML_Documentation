@@ -1,50 +1,160 @@
-# COSAS IMPORTANTES SOBRE XML
+# COSAS IMPORTANTES SOBRE XML  
 
-## XML Introduction
-Diferences between XML and HTML
+---
+
+## Introducción a XML  
+
+### Diferencias entre XML y HTML  
+
 | XML | HTML |
 | :--- | :--- |
-| Designed to carry data | Designed to display data |
-| Simplifies things | More complex |
-| Does NOT do anything | Essential to show information |
-| Tags not predefined | Tags predefined |
+| Sirve para guardar datos | Sirve para mostrar datos |
+| Las etiquetas no están definidas | Las etiquetas están definidas |
+| Sensible a mayúsculas | No sensible a mayúsculas |
+| Reglas estrictas | Más flexible |
+| Transporta y guarda datos | Estructura páginas web |
 
-## XML Tree
-* XML Tree starts at a root element
-* All elements can have sub elements
-* XML Documents are formed as element trees
-* The terms used are parent, child and siblings
-* Siblings are children on the same level, branch from the parent
+---
 
-## XML Syntax
-* XML documents must have one *root* element (parent)
-* The *XML prolog* is optional. If it exists, it must come first in the document.
-* All elements *must* have closing tag.
-* Tags are case *sensitive*.
-* All elements *must* be properly nested.
-* In XML, an error in the document typically causes the parser to *STOP* processing.
+## Para qué se usa XML  
 
-## XML Elements
-* Elements are the building blocks of XML.
-* They can contain text, other elements (child elements), or both.
-* Elements are defined by a start tag `<tag>` and an end tag `</tag>`.
-* Empty elements can use the self-closing form: `<tag/>`.
-* Example:
+- Guardar datos  
+- Pasar datos entre sistemas  
+- Separar los datos de la forma en que se muestran  
+- Compartir información organizada  
+- Usado en APIs, archivos de configuración o servicios web  
+
+---
+
+## Estructura de XML (Árbol)  
+
+- Todo XML tiene un elemento **raíz**  
+- Un elemento puede tener **hijos** (sub-elementos)  
+- Los elementos que están al mismo nivel son **hermanos**  
+
+### Ejemplo
+
 ```xml
-<book>
-    <title>XML Fundamentals</title>
-    <author>John Doe</author>
-</book>
+<libreria>
+    <libro>
+        <titulo>XML Básico</titulo>
+    </libro>
+</libreria>
 ```
-## XML Attributes
-* Attributes provide additional information about elements.
-* They appear inside the start tag in name="value" form.
-* An element can have multiple attributes, separated by spaces.
-* Attribute values must always be quoted (single or double quotes).
-* Example:
+
+- `libreria` → raíz  
+- `libro` → hijo de libreria  
+- `titulo` → hijo de libro  
+
+---
+
+## Sintaxis de XML  
+
+- Debe haber **una sola raíz**  
+- Los elementos deben cerrarse siempre  
+
 ```xml
-<book genre="Programming" language="English">
-    <title>XML Fundamentals</title>
-    <author>John Doe</author>
-</book>
+<ejemplo>Hola</ejemplo>
 ```
+
+- Las etiquetas distinguen mayúsculas y minúsculas  
+- Los elementos deben estar bien anidados  
+- Los valores de los atributos deben ir entre comillas  
+
+### Comentarios
+
+```xml
+<!-- Esto es un comentario -->
+```
+
+### Caracteres especiales
+
+| Carácter | Cómo escribirlo |
+|-----------|----------------|
+| < | `&lt;` |
+| > | `&gt;` |
+| & | `&amp;` |
+| " | `&quot;` |
+| ' | `&apos;` |
+
+---
+
+## Elementos  
+
+- Son los bloques principales de XML  
+- Pueden tener texto, otros elementos o atributos  
+- Los elementos vacíos se escriben así:
+
+```xml
+<br/>
+```
+
+### Ejemplo
+
+```xml
+<libro>
+    <titulo>XML Básico</titulo>
+    <autor>Óscar Valdivia</autor>
+</libro>
+```
+
+---
+
+## Atributos  
+
+- Dan información extra a un elemento  
+- Se escriben dentro de la etiqueta de inicio  
+- Formato: `nombre="valor"`  
+
+### Ejemplo
+
+```xml
+<libro genero="Programación" idioma="Español">
+    <titulo>XML Básico</titulo>
+    <autor>Óscar Valdivia</autor>
+</libro>
+```
+
+---
+
+## Namespaces (Opcional)  
+
+- Sirven para evitar que se repitan nombres de etiquetas  
+
+```xml
+<h:tabla xmlns:h="http://www.w3.org/TR/html4/">
+  <h:fila>
+    <h:celda>Manzanas</h:celda>
+  </h:fila>
+</h:tabla>
+```
+
+---
+
+## Validación (Opcional)  
+
+- XML puede validarse con **DTD** o **XSD**  
+- Esto ayuda a que el XML tenga la estructura correcta  
+
+### Ejemplo DTD
+
+```xml
+<!DOCTYPE nota [
+<!ELEMENT nota (para,de,cuerpo)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+]>
+```
+
+---
+
+## Bien formado vs Válido  
+
+| Bien formado | Válido |
+|--------------|--------|
+| Sigue las reglas básicas de XML | Sigue reglas y estructura definida |
+| Tiene una raíz | Cumple DTD o XSD |
+| Etiquetas cerradas | Tipos de datos correctos |
+
+> Todo XML válido está bien formado, pero no todo XML bien formado es válido.
