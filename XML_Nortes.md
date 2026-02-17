@@ -2,12 +2,12 @@
 
 ## ¿Qué es XML?
 
-XML, which stands for eXtensible Markup Language, is a markup language designed to store and transport data in a structured and platform-independent way. One of its most important characteristics is that it is extensible. Unlike HTML, which has predefined tags such as <p> or <div>, XML allows you to create your own tags. This means you can design a structure that fits exactly the type of data you are working with, whether it is information about books, students, transactions, or configuration settings. That flexibility is one of its core strengths.
+XML, which stands for eXtensible Markup Language, is a markup language designed to store and transport data in a structured and platform-independent way. One of its most important characteristics is that it is extensible. Unlike HTML, which has predefined tags such as &lt;p&gt; or &lt;div&gt;, XML allows you to create your own tags. This means you can design a structure that fits exactly the type of data you are working with, whether it is information about books, students, transactions, or configuration settings. That flexibility is one of its core strengths.
 
-<person>
-  <name>Mike</name>
-  <age>29</age>
-</person>
+&lt;person&gt;
+  &lt;name&gt;Mike&lt;/name&gt;
+  &lt;age&gt;29&lt;/age&gt;
+&lt;/person&gt;
 
 ## Plain text format
 Another key characteristic of XML is that it is text-based. XML documents are plain text files, which makes them human-readable and easy to edit with any text editor. Because they are just text, they are independent of operating systems, hardware, and programming languages. An XML file created on Windows can be read on Linux or macOS without modification. This portability is one of the reasons XML became widely used for data exchange between systems.
@@ -20,7 +20,7 @@ XML organizes data in a hierarchical tree structure. Every XML document must hav
 Another defining feature of XML is that it is strict. XML has clear syntax rules that must be followed. All elements must be properly nested, every opening tag must have a corresponding closing tag (or be self-closing), tag names are case-sensitive, and attribute values must be quoted. If a document violates these rules, the XML parser will stop processing it. This strictness ensures consistency and reliability, especially when exchanging data between systems.
 
 ## Self-Descriptive
-XML is also considered self-descriptive. The meaning of the data is conveyed by the tag names themselves. For example, <price>29.99</price> clearly indicates what the value represents. This makes XML documents easier to understand without needing additional context.
+XML is also considered self-descriptive. The meaning of the data is conveyed by the tag names themselves. For example, &lt;price&gt; 29.99 &lt;/price&gt; clearly indicates what the value represents. This makes XML documents easier to understand without needing additional context.
 
 ## Supports Validation
 Another important characteristic is that XML supports validation. Using tools like DTD or XML Schema (XSD), you can define the exact structure that an XML document must follow. You can specify which elements are allowed, which attributes are required, and even define data types. This allows systems to verify that incoming data follows a specific format before processing it.
