@@ -12,20 +12,21 @@ It's just information wrapped in tags, focused on organizing and describing data
 - Define web services
 - reate other markup languages
 
-## XML Tree Structure
-XML documents are formed as element trees.
-An XML tree starts at a root element and branches from the root to child elements.
-The terms parent, child, and sibling are used to describe the relationships between elements.
-
-Parents have children. Children have parents. Siblings are children on the same level (brothers and sisters).
-
+# XML Syntax
 - *XML Documents Must Have a Root Element*
 - *All XML Elements Must Have a Closing Tag*
 - *XML Tags are Case Sensitive*
 - *XML Elements Must be Properly Nested*
 - *XML Attribute Values Must Always be Quoted* 
 
-## XML elements
+# XML Tree Structure
+XML documents are formed as element trees.
+An XML tree starts at a root element and branches from the root to child elements.
+The terms parent, child, and sibling are used to describe the relationships between elements.
+
+Parents have children. Children have parents. Siblings are children on the same level (brothers and sisters).
+
+# XML elements
 An XML element is everything from (including) the element's start tag to (including) the element's end tag.
 An element can contain:
 - text
@@ -42,6 +43,25 @@ XML elements must follow these naming rules:
 - Element names can contain letters, digits, hyphens, underscores, and periods
 - Element names cannot contain spaces
 
+# XML Attributes
+Attributes are designed to contain data related to a specific element.
+- XML Attributes Must be Quoted.
+<br>
+"< person gender="female" >"
+
+<br>
+
+## Advantages and disadvantages of XML
+
+|Advantages | Disadvantages
+|-----------|---------------
+Clear and structures data organization | More verbose than formats like JSON
+Clear and structured data organization | Larger file size due to many tags
+Widely supported standard | Strict syntax can make it less forgiving
+Good for complex data exchange |
+
+<br>
+
 ## Difference Between XML and HTML
 |XML|HTML
 |--------------|--------------
@@ -52,16 +72,6 @@ Describes data | Displays data
 
 ### XML is Often a Complement to HTML
 In many HTML applications, XML is used to store or transport data, while HTML is used to format and display the same data.
-
-
-## Advantages and disadvantages of XML
-
-|Advantages | Disadvantages
-|-----------|---------------
-Clear and structures data organization | More verbose than formats like JSON
-Clear and structured data organization | Larger file size due to many tags
-Widely supported standard | Strict syntax can make it less forgiving
-Good for complex data exchange |
 
 
 
