@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+
+<productos>
+
+<movil>
+<datos>
+    <marca></marca>
+    <modelo></modelo>
+    <precio></precio>
+    <año></año>
+    <colores>
+    <color></color>
+    <color></color>
+    </colores>
+</datos>
+<datos-tecnicos>
+    <capacidad-almacenamientoGB></capacidad-almacenamientoGB>
+    <camara></camara>
+    <bateria></bateria>
+    <tamanyo-pantalla></tamanyo-pantalla>
+    <wifi></wifi>
+    <sistema-operativo></sistema-operativo>
+    <RAM></RAM>
+    <procesador></procesador>
+</datos-tecnicos>
+<stock></stock>
+</movil>
+
+</productos>
+
+</tienda>
+
+<!-- Sí, podría servir para todas las tiendas. Habría que crear un nuevo 
+elemento root que envuelva todo llamado tiendas. Y cada elemento tienda 
+ponerle un atributo con el nombre de la tienda. -->

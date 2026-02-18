@@ -1,0 +1,64 @@
+<musica>
+
+<cd>
+<autor>THE BEATLES</autor>
+<titulo lang="en">A HARD DAY'S NIGHT</titulo>
+<canciones>
+<cancion>A Hard Day's Night</cancion>
+<cancion>I Should Have...</cancion>
+<cancion>If I Fell</cancion>
+</canciones>
+<referencia>
+    <cdp>7464372</cdp>
+</referencia>
+<detalles>
+    <marca>Compact disc</marca>
+    <companyia>WORDS AND MUSIC: JOHN LENNON...</companyia>
+    <sello-discografico>1964 EMI RECORDS LTD</sello-discografico>
+</detalles>
+<precio />
+</cd>
+
+<cd>
+<autor>THE BEATLES</autor>
+<titulo lang="en">ABBEY ROAD N</titulo>
+<canciones>
+<cancion>Come Together</cancion>
+<cancion>Something</cancion>
+<cancion>Maxwell's silver...</cancion>
+</canciones>
+<referencia>
+    <cdp>7464462</cdp>
+</referencia>
+<detalles>
+    <marca />
+    <companyia>EMI Records Ltd.</companyia>
+    <sello-discografico>1969 EMI RECORDS LTD</sello-discografico>
+</detalles>
+<link-compra />
+</cd>
+
+<cd>
+<autor>THE ROLLING STONES</autor>
+<titulo lang="en">FLOWERS</titulo>
+<productor>Andrew Loog oldham</productor>
+<canciones total-timing="36.56">
+<cancion duracion="3.15">Ruby Tuesday</cancion>
+<cancion duracion="2.33">Have you seen your mother...</cancion>
+<cancion duracion="3.36">Let's spend the night together</cancion>
+</canciones>
+<referencia>
+    <cdp>8201392</cdp>
+</referencia>
+<detalles>
+    <marca>Compact Disc Digital Audio</marca>
+    <companyia>THE DECCA RECORD COMPANY LIMITED, London, England</companyia>
+    <sello-discografico>1987 THE DECCA RECORD CO LTD., LONDON, ENGLAND</sello-discografico>
+    <trade-mark>London</trade-mark>
+    <co-ordination>John Tracy for decca international</co-ordination>
+    <impreso>Printed in West Germany</impreso>
+</detalles>
+<link-compra />
+</cd>
+
+</musica>
