@@ -88,3 +88,37 @@ El 'encoding' por defecto es el internacional, expresado como 'UTF-8' que contie
 
 # Elementos de XML
 
+## Que es un elemento XML?
+un elemento XML es todo lo que va desde la etiqueta de apertura hasta la de cierre inclusive.
+
+- Un elemento puede contener:
+  - Texto
+  - Atributos
+  - Otros elementos
+  - Una combinacion de los anteriores
+
+#### Elementos XML Vacios
+Se puede escribir de dos formas:
+    -`<elemento></elemento>`
+    -`<elemento />`
+Ambas formas producen el mismo resultado en los procesadores XML.
+Los elementos vacios tabien pueden tener atributos.
+
+## Reglas para nombrar Elementos XML
+Los nombres de los elementos XML deben cumplir las siguientes reglas:
+
+- Son sensibles a mayúsculas y minúsculas.
+
+- Deben comenzar con una letra o un guion bajo (_).
+
+- No pueden comenzar con "xml" (en ninguna combinación de mayúsculas o minúsculas).
+
+- Pueden contener letras, números, guiones (-), guiones bajos (_), y puntos (.).
+
+- No pueden contener espacios.
+
+- No hay palabras reservadas (excepto "xml").
+
+---
+
+IMPORTANTE:metadata debe de ser atributo---------------------------------------
