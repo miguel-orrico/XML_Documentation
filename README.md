@@ -2,7 +2,7 @@
 # XML Documentation
 Collaborative Document about What's important in XML
 
-> .[!TIP]
+> .[!TIP].
 > Consejo: Estudiar todo lo del PDF
 
 # XML (eXtensible Markup Language): 
