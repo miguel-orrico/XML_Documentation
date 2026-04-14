@@ -1,6 +1,9 @@
+
 # XML Documentation
 Collaborative Document about What's important in XML
 
+> .[!TIP]
+> Consejo: Estudiar todo lo del PDF
 
 # XML (eXtensible Markup Language): 
 Fue diseñado para almacenar y transportar datos.
