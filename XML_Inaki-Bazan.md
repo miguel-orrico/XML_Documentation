@@ -9,7 +9,7 @@ XML stands for *eXtensive Marking Language*. It is designed to store and transpo
 
 ### Contents of a XML file
 
-```
+``` XML
 <note>
   <to>Tove</to>
   <from>Jani</from>
@@ -23,7 +23,7 @@ XML stands for *eXtensive Marking Language*. It is designed to store and transpo
 - XML is a language used to mark data, whereas HTML is used to *display* data in a structured way.
 - HTML, contrary to XML, has predefined labels and attributes.
 
-<hr>
+---
 
 ## 2. XML Contents and Rules
 
@@ -37,7 +37,7 @@ XML stands for *eXtensive Marking Language*. It is designed to store and transpo
 
 ### The XML Prologue
 
-```
+``` XML
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
@@ -53,7 +53,7 @@ XML stands for *eXtensive Marking Language*. It is designed to store and transpo
 
 ### Comments
 
-```
+``` XML
 <!-- This is a comment -->
 <!-- This is an invalid -- comment -->
 ```
@@ -62,16 +62,17 @@ XML stands for *eXtensive Marking Language*. It is designed to store and transpo
 
 XML elements can be empty, and are treated as self-closing tags. These elements can still have attributes:
 
-```
+``` XML
 <element attr="something"></element>
 <element attr="something">
 ```
 
-<hr>
+---
 
 ## 3. Naming Rules and Conventions
 
 All XML element names must follow these rules:
+
 - They have to start with a letter or an underscore character (```_```).
 - They cannot start with ```XML``` or any lower-case combination (```xml```, etc.), as it is the only XML reserved word.
 - They must not contain spaces.
@@ -94,29 +95,31 @@ All XML element names must follow these rules:
 
 Choose a naming convention and use it consistently across your XML file. Some XML files are associated to a certain database and follow its naming rules and conventions.
 
+---
+
 ## 4. XML Attributes
 
-XML attributes are declared following these format: ```attr="value"```. They can use single or double quotes.
+XML attributes are declared following this format: ```attr="value"```. They can use single or double quotes.
 
-```
+``` XML
 <person gender="female">
 <person gender='nonbinary'>
 ```
 
 Attributes can also use single quotes if they are surrounded by double quotes, and vice versa. They can also use the ```&apos;``` and ```&quot;``` character entities.
 
-<hr>
+---
 
 There are no rules that encourage or dismiss either the use of elements (tags) or attributes:
 
-```
+``` XML
 <person gender="female">
   <firstname>Anna</firstname>
   <lastname>Smith</lastname>
 </person>
 ```
 
-```
+``` XML
 <person>
   <gender>female</gender>
   <firstname>Anna</firstname>
@@ -129,7 +132,8 @@ These two examples provide the same information. The fact that the person's gend
 ### XML Attributes for Metadata
 
 Elements can be assigned ID references. These IDs can be used just like HTML ones:
-```
+
+``` XML
 <note id="501">
     <to>Tove</to>
     <from>Jani</from>
@@ -141,13 +145,14 @@ Elements can be assigned ID references. These IDs can be used just like HTML one
 ### Attributes overuse
 
 NOT using attributes is recommended in favor of using elements (tags). This is because:
+
 - Attributes cannot contain multiple values (elements can).
 - Attributes are not able to form tree structures (elements can).
 - Attributes are not easily expandable for future changes.
 
 Avoid:
 
-```
+``` XML
 <note id="501" day="10" month="01" year="2008"
 to="Tove" from="Jani" heading="Reminder"
 body="Don't forget me this weekend!">
@@ -156,7 +161,7 @@ body="Don't forget me this weekend!">
 
 This causes less headaches:
 
-```
+``` XML
 <note id="501">
     <date>
         <day>10</day>
@@ -173,4 +178,3 @@ This causes less headaches:
     </body>
 </note>
 ```
-
